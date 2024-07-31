@@ -24,7 +24,7 @@ class ApiHttpClient extends AbstractController
         spécifié et des options, notamment la désactivation de la vérification SSL (verify_peer) et 
         le nombre de résultats à renvoyer (ici 15)
         */
-        $response = $this->httpClinet->request('GET', "?results=15", [
+        $response = $this->httpClient->request('GET', "?results=15", [
             'verify_peer' => false,
         ]);
 
